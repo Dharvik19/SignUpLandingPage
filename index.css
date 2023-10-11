@@ -34,21 +34,24 @@ nav h3{
     color: aliceblue;
     cursor: pointer;
 }
-ul li {
+ul li a{
     /* padding:5px 20px; */
     padding:0 10px;
     color: aliceblue;
     cursor: pointer;
+    text-decoration: none;
 }
-
-ul li:nth-child(5){
+ul li:nth-child(5) a{
     background-color: #e93a7d;
     border-radius: 20px;
     padding: 5px 20px;
 
 }
-ul li:nth-child(1){
-    color: rgb(158, 158, 158);
+ul li:nth-child(5) a:hover{
+    background-color: #e1568b;
+}
+ul li:nth-child(1) a{
+    color: rgb(132, 132, 132);
 }
 /* Header Section ENDS */
 /* HERO SECTION STARTS */
@@ -80,14 +83,26 @@ ul li:nth-child(1){
     padding-right: 10%;
     margin: 25px 0;
 }
-.left button{
+.left button {
+    background-color: transparent;
+    border: none;
+    margin:0;
+    padding: 0;
+
+}
+.left button a{
     font-size: 1rem;
     color: aliceblue;
+    text-decoration: none;
     background-color: #e93a7d;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
-    margin: 10px 0;
+    cursor: pointer;
+    margin: 0;
+}
+.left button a:hover{
+    background-color: #e1568b;
 }
 /* Hero right section */
 .right{
@@ -125,14 +140,17 @@ ul li:nth-child(1){
     outline:none;
     cursor: pointer;
 }
-
+.formButton:hover{
+    background-color: #423091;
+}
 #twitterSignUp{
     background-color: #26A7DE;
 }
-
-hr{
+#twitterSignUp:hover{
+    background-color: #60c0e9;
+}hr{
     margin-top: 20px;
-    width: 80%;
+    width: 100%;
 }
 
 input[type="checkbox"] {
@@ -156,5 +174,11 @@ input[type="checkbox"] {
 
 .right p a{
     color: #26A7DE;
+    text-decoration: none;
 }
+.right p a:hover{
+    color:#60c0e9;
+    text-decoration: none;
+}
+
 /* HERO SECTION ENDS */
